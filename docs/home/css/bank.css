@@ -1,0 +1,150 @@
+html,body{
+    height: 100%;
+    background-color: #383F49;
+}
+
+.mui-bar{
+    background-color: #383F49;
+    color: #fff;
+}
+
+.padding-top-10{
+    display: block;
+    min-height: 10px !important;
+}
+
+.padding-top-44{
+    display: block;
+    min-height: 44px !important;
+}
+
+.mui-bar-nav{
+    box-shadow: 0 0px 0px #ccc !important;
+    border-bottom: 1px solid #353c46;
+}
+
+.mui-bar a{
+    text-decoration: none !important;
+}
+
+.mui-bar .back{
+    color: #F5F8F9;
+    font-size: 12px !important;
+    display: inline-block;
+    line-height: 44px;
+}
+
+.mui-title{
+    font-size: 18px;
+    color: #F5F8F9;
+}
+
+.bank-list-container{
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+}
+
+.bank-list{
+    display: block;
+    margin: 0 auto;
+}
+
+.bank-list ul{
+    list-style: none;
+}
+
+.bank-list ul li{
+    width: 100%;
+    display: block;
+    height: 120px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+.bank-list .blue {
+    background: url(../images/bank/bank_bg_blue.png) center top repeat;
+    /* box-shadow: 1px 2px 8px 0px #5DA2D8; */
+}
+
+.bank-list .green {
+    background: url(../images/bank/bank_bg_green.png) center top repeat;
+    /* box-shadow: 1px 2px 8px 0px #01B5A5; */
+}
+
+.bank-list .red {
+    background: url(../images/bank/bank_bg_red.png) center top repeat;
+    /* box-shadow: 1px 2px 8px 0px #FE8973; */
+}
+
+.bank-list .logo-container, .bank-list .info{
+    display: inline-block;
+    float: left;
+}
+
+.bank-list .logo-container{
+    width: 20%;
+    height: 120px;
+    text-align: center;
+}
+
+.bank-list .logo-container .logo{
+    display: inline-block;
+    position: relative;
+    top: 16px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    border-radius: 60px;
+    background-color: #fff;
+}
+
+.bank-list .logo-container .logo .img{
+    display: inline-block;
+    height: 38px;
+    width: 27px;
+    background-repeat: no-repeat;
+    background-position-x: 2px;
+    background-position-y: 2px;
+    position: relative;
+    right: 2px;
+    top: 1px;
+}
+
+.bank-list .info .title{
+    position: relative;
+    top: 12px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    font-size: 22px;
+}
+
+.bank-list .info .type{
+    position: relative;
+    top: 10px;
+    display: block;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.bank-list .info .cardNumber{
+    position: relative;
+    top: 10px;
+    display: block;
+    color: rgba(255, 255, 255, 0.41);
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+
+.bank-list .info .cardNumber .stress{
+    color: #fff;
+    opacity: 1 !important;
+    position: relative;
+    top: -5px;
+}

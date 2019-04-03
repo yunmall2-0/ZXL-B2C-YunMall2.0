@@ -1,0 +1,119 @@
+a,img,button,input,textarea,div{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+.xl-input-alert{
+    background: url("../images/alert_box_edit_back.png") no-repeat;
+    background-size: 100%;
+    height: 777px;
+    width:  576px;
+    margin: 0 auto;
+}
+
+.xl-input-alert .content{
+    height: auto;
+    position: relative;
+    top: 115px;
+}
+
+
+/*iphone 5/se*/
+@media screen and (min-width: 320px){
+    .xl-input-alert .content{
+        height: auto;
+        position: relative;
+        top: 85px;
+    }
+}
+
+/*iphoneX*/
+@media screen and (min-width: 375px){
+    .xl-input-alert .content{
+        height: auto;
+        position: relative;
+        top: 115px;
+    }
+}
+
+/*iphone6/7/8/plus*/
+@media screen and (min-width: 414px){
+    .xl-input-alert .content{
+        height: auto;
+        position: relative;
+        top: 140px;
+    }
+}
+
+
+.xl-input-alert .content .title{
+    font-size: 25px;
+    color: #333333;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.xl-input-alert .content .editor{
+    border: none;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+
+.xl-input-alert .content .yes{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    background-color: #FF4E3A;
+    border-radius: 30px;
+}
+
+.xl-input-alert .content .yes span {
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.xl-input-alert .content .close{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    display: block;
+    color: #cecece;
+    font-size: 15px;
+}
+
+.xl-alert-padding-top-10{
+    min-height: 10px;
+}
+
+
+.xl-icon-alert img{
+    max-width: 285px;
+    max-height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+.xl-icon-alert .title{
+    color: #333333;
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+}

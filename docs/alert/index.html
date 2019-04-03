@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Document</title>
+    <link rel="stylesheet" href="layer_mobile/need/layer.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <style>
+        html, body{
+            height: 100%;
+            background-color: #808080;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="openInputBox" value="弹出带有编辑框的消息框">
+<input type="button" id="openIconBox" value="弹出带有图标的消息框">
+
+
+    <!--input alert begin-->
+    <div class="xl-input-alert" style="display: none">
+        <div class="content">
+            <span class="title">标题</span>
+            <div class="xl-alert-padding-top-10"></div>
+            <div class="xl-alert-padding-top-10"></div>
+            <input type="text" class="editor" placeholder="占位符">
+            <div class="xl-alert-padding-top-10"></div>
+            <div class="xl-alert-padding-top-10"></div>
+            <div class="xl-alert-padding-top-10"></div>
+            <a href="javascript:void(0)" class="yes">
+                <span>确定</span>
+            </a>
+            <div class="padding-top-10"></div>
+            <a href="javascript:void(0)" class="close">关闭窗口</a>
+        </div>
+    </div>
+    <!--input alert end-->
+
+    <!--icon alert begin-->
+    <div class="xl-icon-alert" style="display: none">
+        <img src="./images/alert_box_location_back.png" alt="">
+        <div class="xl-alert-padding-top-10"></div>
+        <div class="xl-alert-padding-top-10"></div>
+        <div class="title">系统定位到您在<span style="color: #FE0043">上海</span>城市</div>
+    </div>
+    <!--icon alert end-->
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="layer_mobile/layer.js"></script>
+    <script type="text/javascript" src="js/xl.alert.js"></script>
+    <script>
+        $(function(){
+            $("#openInputBox").click(function(){
+                xlAlert.openInputAlert("填写邀请码", "请输入您的邀请码", ["确定", "关闭窗口"], function(){
+                    alert("yes");
+                }, function(){
+                    alert("close");
+                });
+            })
+
+            $("#openIconBox").click(function(){
+                xlAlert.openIconAlert("./images/alert_box_location_back.png", "系统定位到您在<span style='color: #FE0043;'>上海</span>城市", ["去设置"], false, function(){
+                    alert("yes");
+                }, function(){
+                    alert("close");
+                });
+            })
+        })
+    </script>
+</body>
+</html>

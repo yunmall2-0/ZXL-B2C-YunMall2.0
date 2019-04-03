@@ -1,0 +1,62 @@
+#开发环境
+profiles: dev
+
+#数据库配置
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: false
+  datasource:
+    url: jdbc:mysql://192.168.50.239/yunmallsend?serverTimezone=GMT%2B8&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    driver-class-name: com.mysql.jdbc.Driver
+    username: debian-sys-maint   #debian-sys-maint（服务器数据库名）
+    password: su4B1V2efWUxbRSm   #su4B1V2efWUxbRSm（服务器数据库密码）
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      max-wait-millis: 60000
+
+  #缓存数据库配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    database: 1
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        min-idle: 0
+        max-idle: 8
+    timeout: 60000
+  jmx:
+    enabled: false
+#数据库框架配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+#服务容器配置
+server:
+  port: 8020
+  tomcat:
+    uri-encoding: UTF-8
+  address: 0.0.0.0
+
+
+#日志配置
+logging:
+  level:
+    root: debug
+  #file: c:boot.log
+
+
+#微信支付的配置
+wechat:
+  mpAppId: wx32ab6fe5c36ce313
+  mchId:  1524857311
+  mchKey:  sy5469mse8w6NpMuxkCABwLnwYbkSptz
+  keyPath:
+  notifyUrl: http://xuanlv.natapp1.cc/api/order/paymentSuccess

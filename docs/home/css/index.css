@@ -1,0 +1,345 @@
+body {
+    background-color: #fff !important;
+}
+
+.top-container{
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.env-alert{
+    width: 100%;
+    min-height: 60px;
+    background-color: #ECEDED;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.env-alert .close, .env-alert .info, .env-alert .nav{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.env-alert .close{
+    width: 10%;
+}
+
+.env-alert .info{
+    width: 60%;
+    text-align: left;
+    color: #7D7D7D;
+}
+
+.env-alert .info img{
+    vertical-align:middle;
+    height: 40px;
+}
+
+.env-alert .nav{
+    width: 30%;
+}
+
+.in-app-open-btn{
+    display: inline-block !important;
+    border-radius: 15px !important;
+    background-color: #fff !important;
+    border: 1px solid #F80337 !important;
+    height: 30px !important;
+    width: 100px !important;
+    color: #F80337 !important;
+    outline: none !important;
+    vertical-align: baseline;
+    vertical-align: center !important;
+}
+
+
+.xl-slider{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.xl-slider .mui-slider{
+    width:95%;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+
+.xl-slider .mui-slider .mui-slider-item img{
+    width: 100%;
+}
+
+.xl-slider .mui-slider, .xl-slider .mui-slider .mui-slider-item{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-container{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.search-container .left{
+    float: left;
+    position: relative;
+    left: 10px;
+    width: 85%;
+}
+
+.search-container .left i{
+    position: absolute;
+    left: 5px;
+}
+
+.search-container .left input{
+    float: left;
+    display: inline-block;
+    width: 100%;
+    line-height: 28px;
+    border: none;
+    background-color: #EDEDED;
+    padding-left: 28px;
+    border-radius: 0px;
+}
+
+.search-container .right{
+    float: right;
+    position: relative;
+    right: 10px;
+    width: 8%;
+    text-align: center;
+}
+
+.search-container .right input{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(125, 125, 125);
+    text-align: center;
+    line-height: 40px;
+    padding: 0px;
+}
+
+.search-container .right input:active{
+    background-color: rgba(255,255,255,0);
+}
+
+.padding-top-10{
+    min-height: 10px;
+}
+
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 0px;
+}
+
+.hot-category-container{
+    width: 100%;
+    height: 35px;
+}
+
+.hot-category-container ul{
+    list-style: none;
+    width: 95%;
+    line-height: 35px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.hot-category-container ul li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: #7D7D7D;
+}
+
+.hot-category-container .active{
+    font-size: 15px;
+    color: #343434;
+}
+
+
+.hot-category-container .default{
+    width: 40px;
+}
+
+.xl-content{
+    position: relative;
+    top: 155px;
+}
+
+.recommended-floor-container{
+    width: 95%;
+    min-height: 180px;
+    margin: 0 auto;
+}
+
+.recommended-floor-container .left{
+    width: 220px;
+    height: 180px;
+    float: left;
+}
+
+.recommended-floor-container .left .master{
+    width: 100%;
+    height: 180px;
+    display: inline-block;
+    background: url(../images/recommend/1.png) no-repeat;
+    background-size: 100%;
+}
+
+.recommended-floor-container .left, .recommended-floor-container .right{
+    display: inline-block;
+}
+
+.recommended-floor-container .right{
+    float: right;
+    width: 170px;
+    height: 180px;
+    position: relative;
+}
+
+.recommended-floor-container .right .top{
+    display: block;
+    height: 90px;
+    width: 100%;
+    background: url(../images/recommend/2.png) no-repeat;
+    background-size: 100%;
+}
+
+
+.recommended-floor-container .right .bottom{
+    display: block;
+    height: 85px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: url(../images/recommend/3.png) no-repeat;
+    background-size: 100%;
+}
+
+.hot-zone-container{
+    width: 100%;
+    height: 100px;
+}
+
+.hot-zone-container ul{
+    width: 95%;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.hot-zone-container ul li img{
+    display: block;
+    width: 60px;
+}
+
+.hot-zone-container ul li span{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #858585;
+    line-height: 30px;
+}
+
+.hot-zone-container ul li{
+    display: inline-block;
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 8px;
+}
+
+.hot-product-list{
+    width: 100%;
+    height: auto;
+}
+
+.hot-product-list ul{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hot-product-list ul li img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.hot-product-list ul li{
+    width: 100%;
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+.hot-product-list ul li .bottom{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.hot-product-list ul li .bottom .title{
+    float: left;
+    font-size: 14px;
+    color: #858585;
+}
+
+.hot-product-list ul li .bottom .buy{
+    float: right;
+    font-size: 12px;
+    color: #F8093C;
+    border: 1px solid #F8093C;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 60px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+.hot-product-list ul li .bottom .CNY{
+    color: #818181;
+    font-size: 12px;
+    font-family: Consolas;
+    position: relative;
+    left: 3px;
+}
+
+.hot-product-list ul li .bottom .price{
+    color: #F91B4A;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hot-category-container ul li:active{
+    color: #F91B4A;
+}
